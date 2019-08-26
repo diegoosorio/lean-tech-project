@@ -1,0 +1,93 @@
+.Route{
+  display: flex;
+  flex-direction: row;
+}
+.Route__check{
+  display: flex;
+  align-items: center;
+  /* margin-right: 10px; */
+  color: #EE8D38;
+  font-size: 40px;
+  flex: 5%;
+  /* border: 1px solid chartreuse; */
+}
+.Route__product {
+  background: #ffffff;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  height: 80px;  
+  /* width: 600px; */
+  padding: 10px;
+  margin: 20px 0;
+  flex: 85%;
+}
+.Date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  border-right: 1px solid #B4B4B4;
+  color: #B4B4B4;
+}
+.Location{
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-right: 1px solid #B4B4B4;
+  /* border: 1px solid green; */
+}
+.Location__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.Location__angle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #878787;
+}
+.Service__price{
+  flex-grow: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid green; */
+  margin-left: 20px;
+}
+.Service__price p{
+  font-size: 30px;
+  color: #878787;
+}
+.Quantity{
+  width: 20px;
+  height: 20px;
+  background: #ED5356;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 5px;
+}
+.fa-truck{
+  color: #858585;
+  font-size: 40px;
+}
+.fa-location-arrow{
+  color: #858585;
+}
+.fa-angle-down{
+  color: #EAA85F;
+  font-size: 40px;
+}
+.fa-ellipsis-v:hover{
+  cursor: pointer;
+}
+p {
+  margin: 0;
+}

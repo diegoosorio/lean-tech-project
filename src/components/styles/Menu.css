@@ -1,0 +1,29 @@
+.Menu{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #ffffff;
+  margin: 20px 0;
+}
+
+.Link{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 5px;
+  color: #383838;
+}
+.Link i{
+  margin-bottom: 5px; 
+}
+.Link p{
+  font-size: 0.8rem;
+}
+.Link:hover {
+  color: #ffffff;
+  background: #193947;
+  text-decoration: none;
+}
