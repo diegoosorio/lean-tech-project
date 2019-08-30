@@ -7,6 +7,15 @@ import Check from './Check';
 import logo from '../images/logo.png';
 
 class App extends React.Component {
+  state = {
+    route: {
+      origin: "Houston, TX, 33619",
+      destiny: "Atlanta, GA, 30123",
+      price: "$250.00",
+      quantity: "1",
+    },
+  }
+
   render(){
     return (
       <div className="App">
@@ -23,9 +32,9 @@ class App extends React.Component {
           <div className="Right__container">
             <Menu/>
             <Search className="Search" isCheck="true"/>
-            <Route isCheck="true"/>
-            <Route isCheck="true"/>
-            <Route isCheck="true"/>
+            <Route isCheck="true" route={this.state.route}/>
+            <Route isCheck="true" route={this.state.route}/>
+            <Route isCheck="true" route={this.state.route}/>
           </div>
         </div>
         <div className="Add">

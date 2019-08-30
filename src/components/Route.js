@@ -13,7 +13,6 @@ class Route extends React.Component {
         }
         <div className="Route__product">
           <div className="Date">
-            {/* <p>{this.props.date}</p> */}
             <p>Monday <br/> 10<sup>th</sup> 2:28 <br/> PM</p>
           </div>
           <div className="Location">
@@ -21,15 +20,15 @@ class Route extends React.Component {
               <i className="fas fa-location-arrow"></i>
             </div>
             <div className="Location__angle">
-              <p>Houston, TX, 33619</p>
+              <p>{this.props.route.origin}</p>
               <i className="fas fa-angle-down"></i>
-              <p>Atlanta, GA, 30123</p>
+              <p>{this.props.route.destiny}</p>
             </div>
           </div>
           <div className="Service__price">
             <i className="fas fa-truck fa-flip-horizontal"></i>
-            <p>$250.00</p>
-            <div className="Quantity">1</div>
+            <p>{this.props.route.price}</p>
+            <div className="Quantity">{this.props.route.quantity}</div>
             <i className="fas fa-ellipsis-v"></i>
           </div>
         </div>
