@@ -1,14 +1,16 @@
 import React from 'react';
 import "./styles/Route.css";
+import Check from './Check';
 
 class Route extends React.Component {
-
   render() {
     return (
       <div className="Route">
-        <div className="Route__check">
-          <i class="fas fa-check-circle"></i>
-        </div>
+        {
+          this.props.isCheck === "true"
+          ? <Check />
+          : null
+        }
         <div className="Route__product">
           <div className="Date">
             {/* <p>{this.props.date}</p> */}

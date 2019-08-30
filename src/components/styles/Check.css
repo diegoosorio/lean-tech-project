@@ -1,0 +1,9 @@
+.Route__check{
+  display: flex;
+  align-items: center;
+  /* margin-right: 10px; */
+  color: #EE8D38;
+  font-size: 40px;
+  /* flex: 5%; */
+  /* border: 1px solid chartreuse; */
+}

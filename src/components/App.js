@@ -3,6 +3,7 @@ import './styles/App.css';
 import Route from './Route';
 import Menu from './Menu';
 import Search from './Search';
+import Check from './Check';
 import logo from '../images/logo.png';
 
 class App extends React.Component {
@@ -15,15 +16,16 @@ class App extends React.Component {
           </div>
           <div className="Smart__filters">
             Smart filters
+            <Search isCheck="false"/>
           </div>
         </div>
         <div className="Right__side">
           <div className="Right__container">
             <Menu/>
-            <Search className="Search"/>
-            <Route />
-            <Route />
-            <Route />
+            <Search className="Search" isCheck="true"/>
+            <Route isCheck="true"/>
+            <Route isCheck="true"/>
+            <Route isCheck="true"/>
           </div>
         </div>
         <div className="Add">
